@@ -1,13 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+  font-family: "Playfair Display", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  width: 24rem; /* Increase the width of the card */
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
 }
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.badge-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Define base styles for the badge */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+/* Custom colors for different badges */
+.badge-tech {
+  background-color: #007bff; /* Blue */
+}
+
+.badge-js {
+  background-color: #f0db4f; /* JavaScript Yellow */
+  color: #000; /* Black text for contrast */
+}
+
+.badge-react {
+  background-color: #61dafb; /* React Blue */
+  color: #000; /* Black text */
+}
+
+.badge-css {
+  background-color: #264de4; /* CSS Blue */
+}
+
+.badge-webdev {
+  background-color: #28a745; /* Green */
+}
+
